@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,10 @@
 		92A5A34725C86CEE002BC5FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92A5A34525C86CEE002BC5FA /* Main.storyboard */; };
 		92A5A34925C86CF0002BC5FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92A5A34825C86CF0002BC5FA /* Assets.xcassets */; };
 		92A5A34C25C86CF0002BC5FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92A5A34A25C86CF0002BC5FA /* LaunchScreen.storyboard */; };
+		92A5A35A25C882D6002BC5FA /* DroppablePin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A5A35925C882D6002BC5FA /* DroppablePin.swift */; };
+		92A5A35C25C89937002BC5FA /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A5A35B25C89937002BC5FA /* PhotoCell.swift */; };
+		92A5A35E25C89D15002BC5FA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A5A35D25C89D15002BC5FA /* Constants.swift */; };
+		92A5A36025C8AF27002BC5FA /* PopVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A5A35F25C8AF27002BC5FA /* PopVC.swift */; };
 		C40AA76278F53AE905CDCFFE /* Pods_Pixel_City.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83BB36BA32E973EA8C61D33F /* Pods_Pixel_City.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +31,10 @@
 		92A5A34825C86CF0002BC5FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		92A5A34B25C86CF0002BC5FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		92A5A34D25C86CF0002BC5FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92A5A35925C882D6002BC5FA /* DroppablePin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DroppablePin.swift; sourceTree = "<group>"; };
+		92A5A35B25C89937002BC5FA /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		92A5A35D25C89D15002BC5FA /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		92A5A35F25C8AF27002BC5FA /* PopVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopVC.swift; sourceTree = "<group>"; };
 		F19ECCE42F1F7868BEF47698 /* Pods-Pixel City.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pixel City.release.xcconfig"; path = "Target Support Files/Pods-Pixel City/Pods-Pixel City.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -48,7 +56,6 @@
 				623320119C88910C5DD836DE /* Pods-Pixel City.debug.xcconfig */,
 				F19ECCE42F1F7868BEF47698 /* Pods-Pixel City.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -99,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				92A5A34325C86CEE002BC5FA /* MapVC.swift */,
+				92A5A35F25C8AF27002BC5FA /* PopVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -106,6 +114,8 @@
 		92A5A35425C86D2F002BC5FA /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				92A5A35925C882D6002BC5FA /* DroppablePin.swift */,
+				92A5A35B25C89937002BC5FA /* PhotoCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -120,6 +130,7 @@
 		92A5A35625C86D46002BC5FA /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				92A5A35D25C89D15002BC5FA /* Constants.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -240,8 +251,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				92A5A34425C86CEE002BC5FA /* MapVC.swift in Sources */,
+				92A5A35C25C89937002BC5FA /* PhotoCell.swift in Sources */,
+				92A5A36025C8AF27002BC5FA /* PopVC.swift in Sources */,
+				92A5A35A25C882D6002BC5FA /* DroppablePin.swift in Sources */,
 				92A5A34025C86CEE002BC5FA /* AppDelegate.swift in Sources */,
 				92A5A34225C86CEE002BC5FA /* SceneDelegate.swift in Sources */,
+				92A5A35E25C89D15002BC5FA /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,6 +402,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0.4;
 				DEVELOPMENT_TEAM = 8L83CZ8839;
 				INFOPLIST_FILE = "Pixel City/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -406,6 +422,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0.4;
 				DEVELOPMENT_TEAM = 8L83CZ8839;
 				INFOPLIST_FILE = "Pixel City/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
